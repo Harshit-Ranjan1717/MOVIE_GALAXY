@@ -1,0 +1,200 @@
+body {
+      margin:0;
+      /* width: 100%;
+      height: 100%;
+      position: absolute; */
+      /* background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+       */
+       background-image: url(https://wallpapercave.com/dwp2x/wp4566762.jpg);
+      background-size: 600% 100%;
+      background-size:contain;
+      /* animation: gradient 16s linear infinite;
+      animation-direction: alternate;  */
+
+      /* background-color: black; */
+  }
+  .wrapper {
+      width: 100%;
+      min-height: 100vh;
+      padding: 15px 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+  }
+  @keyframes gradient {
+      0% {background-position: 0%}
+      100% {background-position: 100%}
+  }
+
+.container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #101528;
+    color: #eee; */
+}
+
+.container h1{
+
+    color: #eee;
+}
+
+.search-bar{
+    display: flex;
+}
+
+.search-bar i{
+
+    position: absolute;
+    top:2.9rem;
+    left:60.1rem;
+    color: grey;
+}
+
+.input{
+
+    margin-left: 30rem;
+    border: .1rem solid #eeee;
+    height: 2rem;
+    width: 40%;
+    font-size: 1rem;
+    border-radius: .3rem;
+    padding-left: 2.2rem;
+    outline: none;
+}
+
+.btn{
+
+    margin-left: 5px;
+    width: 20%;
+    padding: 9px 4px;
+    border-radius: .3rem;
+    border: none;
+    background-color: #4d61b0f0;
+    color: white;
+   
+    
+}
+
+.search-data {
+    display: flex;
+    max-width: 1200px;
+    gap: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.wrapper .card {
+    position: relative;
+    font-size: 14px;
+    line-height: 21px;
+    width: 285px;
+    height: 360px;
+    overflow: hidden;
+    transition: 0.5s ease all;
+    display: flex;
+    color: #eee;
+    border-radius: 10px;
+    margin: 10px;
+    background: 2px solid transparent;
+
+  }
+  
+  .wrapper .card .card-content {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 50px 10px 7px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(51, 55, 69, 0),
+      rgba(16, 21, 40, 0.95)
+    );
+    transition: inherit;
+  }
+  
+  .wrapper .card .card-content .card-cont-header {
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .wrapper .card .card-content .describe {
+    max-height: 0;
+    opacity: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    transition: inherit;
+  }
+  
+  .wrapper .card:hover {
+    cursor: pointer;
+  }
+  
+  .wrapper .card:hover .card-content {
+    background-image: linear-gradient(180deg, rgba(51, 55, 69, 0) 0, #101528 48%);
+  }
+  
+  .wrapper .card:hover .btn {
+    background: #06c3dd;
+    border-color: #06c3dd;
+  }
+  
+  .wrapper .card:hover .describe {
+    max-height: 200px;
+    padding: 8px 0;
+    opacity: 1;
+  }
+  
+  .search-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    align-items: center;
+    margin-bottom: 15px;
+    margin: 15px 0 30px 0;
+  }
+  
+  .search-block #search-form {
+    display: flex;
+    max-width: 400px;
+  }
+  
+  .search-block input {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 0;
+    border: none;
+    background: rgba(255, 255, 255, 0.75);
+  }
+  
+  .search-block .btn {
+    width: 120px;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid lightgray;
+  }
+  
+  .search-block .btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+  }
+  
+  .btn-load {
+    background-color: skyblue;
+    padding: 10px 25px;
+    border: none;
+    margin-top: 15px;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
